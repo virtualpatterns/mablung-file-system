@@ -89,7 +89,7 @@ forEach(fileName => {
 'sample1.json5'].
 forEach(fileName => {
 
-  Test(`FileSystem.readAllJson('${fileName}') throws ...`, async test => {
+  Test(`FileSystem.readAllJson('${fileName}') throws SyntaxError`, async test => {
     let path = Require.resolve(`./resource/file-system/read-all-json/${fileName}`);
     await test.throwsAsync(FileSystem.readAllJson(path), { 'instanceOf': SyntaxError });
   });

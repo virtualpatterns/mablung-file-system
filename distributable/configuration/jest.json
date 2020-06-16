@@ -1,5 +1,0 @@
-{
-  "bail": true,
-  "collectCoverage": true,
-  "rootDir": "../"
-}

@@ -1,5 +1,5 @@
 import { createRequire as _createRequire } from "module";import Path from 'path';
-import { ProcessDurationExceededError } from '@virtualpatterns/mablung-process';
+import { DurationExceededProcessError } from '@virtualpatterns/mablung-process';
 import Test from 'ava';
 
 import { FileSystem } from '../../index.js';
@@ -36,7 +36,7 @@ Test('FileSystem.whenExists(maximumDuration, pollInterval, path)', async test =>
   try {
 
     test.truthy(await FileSystem.whenExists(maximumDuration, pollInterval, existsPath));
-    await test.throwsAsync(FileSystem.whenExists(maximumDuration, pollInterval, notExistsPath), { 'instanceOf': ProcessDurationExceededError });
+    await test.throwsAsync(FileSystem.whenExists(maximumDuration, pollInterval, notExistsPath), { 'instanceOf': DurationExceededProcessError });
 
   } finally {
     await FileSystem.remove(existsPath);
@@ -59,7 +59,7 @@ Test('FileSystem.whenNotExists(maximumDuration, pollInterval, path)', async test
   try {
 
     test.truthy(await FileSystem.whenNotExists(maximumDuration, pollInterval, notExistsPath));
-    await test.throwsAsync(FileSystem.whenNotExists(maximumDuration, pollInterval, existsPath), { 'instanceOf': ProcessDurationExceededError });
+    await test.throwsAsync(FileSystem.whenNotExists(maximumDuration, pollInterval, existsPath), { 'instanceOf': DurationExceededProcessError });
 
   } finally {
     await FileSystem.remove(existsPath);

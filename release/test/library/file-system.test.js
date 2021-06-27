@@ -6,7 +6,7 @@ import { FileSystem } from '../../index.js';
 
 const Require = _createRequire(import.meta.url);
 
-Test('FileSystem.touch(path)', async test => {
+Test('FileSystem.touch(path)', async (test) => {
 
   let path = 'process/pid/touch.pid';
   await FileSystem.ensureDir(Path.dirname(path));
@@ -21,7 +21,7 @@ Test('FileSystem.touch(path)', async test => {
 
 });
 
-Test('FileSystem.whenExists(maximumDuration, pollInterval, path)', async test => {
+Test('FileSystem.whenExists(maximumDuration, pollInterval, path)', async (test) => {
 
   let maximumDuration = 1000;
   let pollInterval = maximumDuration / 4;
@@ -44,7 +44,7 @@ Test('FileSystem.whenExists(maximumDuration, pollInterval, path)', async test =>
 
 });
 
-Test('FileSystem.whenNotExists(maximumDuration, pollInterval, path)', async test => {
+Test('FileSystem.whenNotExists(maximumDuration, pollInterval, path)', async (test) => {
 
   let maximumDuration = 1000;
   let pollInterval = maximumDuration / 4;
@@ -70,9 +70,9 @@ Test('FileSystem.whenNotExists(maximumDuration, pollInterval, path)', async test
 [
 'sample0.json',
 'sample0.json5'].
-forEach(fileName => {
+forEach((fileName) => {
 
-  Test(`FileSystem.readAllJson('${fileName}')`, async test => {
+  Test(`FileSystem.readAllJson('${fileName}')`, async (test) => {
 
     let path = Require.resolve(`./resource/file-system/read-all-json/${fileName}`);
     let content = await FileSystem.readAllJson(path);
@@ -87,12 +87,13 @@ forEach(fileName => {
 [
 'sample1.json',
 'sample1.json5'].
-forEach(fileName => {
+forEach((fileName) => {
 
-  Test(`FileSystem.readAllJson('${fileName}') throws SyntaxError`, async test => {
+  Test(`FileSystem.readAllJson('${fileName}') throws SyntaxError`, async (test) => {
     let path = Require.resolve(`./resource/file-system/read-all-json/${fileName}`);
     await test.throwsAsync(FileSystem.readAllJson(path), { 'instanceOf': SyntaxError });
   });
 
 });
+
 //# sourceMappingURL=file-system.test.js.map

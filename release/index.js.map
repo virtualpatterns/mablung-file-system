@@ -1,1 +1,1 @@
-{"version":3,"sources":["../source/index.js"],"names":[],"mappings":"AAAA,cAAc,0BAAd","sourcesContent":["export * from './library/file-system.js'"],"file":"index.js"}
+{"version":3,"sources":["../source/index.js"],"names":[],"mappings":"AAAA,cAAc,0BAAd","file":"index.js","sourcesContent":["export * from './library/file-system.js'"]}

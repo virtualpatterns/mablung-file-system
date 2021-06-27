@@ -18,17 +18,17 @@ class FileSystem {
   static whenNotExists(maximumDuration, pollInterval, path) {
     return Process.when(maximumDuration, pollInterval, () => {
       return FileSystem.pathExists(path).
-      then(value => !value);
+      then((value) => !value);
     });
   }
 
   static readAllJson(path, option = { 'encoding': 'utf-8' }) {
     return FileSystem.readFile(path, option).
-    then(contents => {
+    then((contents) => {
       return contents.
       split('\n').
-      filter(value => value !== '').
-      map(value => JSON5.parse(value));
+      filter((value) => value !== '').
+      map((value) => JSON5.parse(value));
     });
   }}
 
@@ -37,4 +37,5 @@ class FileSystem {
 Object.setPrototypeOf(FileSystem, _FileSystem);
 
 export { FileSystem };
+
 //# sourceMappingURL=file-system.js.map

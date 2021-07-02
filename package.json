@@ -31,6 +31,10 @@
     ".": "./release/index.js",
     "./package.json": "./package.json"
   },
+  "files": [
+    "/release/library",
+    "/release/index.js"
+  ],
   "license": "GPL-3.0+",
   "name": "@virtualpatterns/mablung-file-system",
   "repository": {
@@ -48,19 +52,19 @@
     "@babel/eslint-parser": "^7.14.7",
     "@babel/plugin-syntax-import-meta": "^7.10.4",
     "@pwn/is": "^1.0.2",
-    "@virtualpatterns/mablung-babel-plugin-replace-identifier": "virtualpatterns/mablung-babel-plugin-replace-identifier.git",
-    "@virtualpatterns/mablung-check-dependency": "virtualpatterns/mablung-check-dependency",
-    "@virtualpatterns/mablung-source-map-support": "virtualpatterns/mablung-source-map-support.git",
-    "@virtualpatterns/mablung-makefile": "virtualpatterns/mablung-makefile",
+    "@virtualpatterns/mablung-babel-plugin-replace-identifier": "0.0.1-15",
+    "@virtualpatterns/mablung-check-dependency": "0.0.1-45",
+    "@virtualpatterns/mablung-source-map-support": "0.0.2-43",
+    "@virtualpatterns/mablung-makefile": "0.0.1-51",
     "ava": "^3.15.0",
     "c8": "^7.7.3",
     "eslint": "^7.29.0",
     "eslint-plugin-babel": "^5.3.1",
-    "npm-check-updates": "^11.7.1",
+    "npm-check-updates": "^11.8.0",
     "shx": "^0.3.3"
   },
   "dependencies": {
-    "@virtualpatterns/mablung-process": "virtualpatterns/mablung-process.git",
+    "@virtualpatterns/mablung-process": "0.0.2-24",
     "fs-extra": "^10.0.0",
     "json5": "^2.2.0",
     "touch": "^3.1.0"

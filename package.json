@@ -43,7 +43,7 @@
     "test": "make test"
   },
   "type": "module",
-  "version": "0.0.2-15",
+  "version": "0.0.2-16",
   "dependencies": {
     "@virtualpatterns/mablung-process": "0.0.2-26",
     "fs-extra": "^10.0.0",

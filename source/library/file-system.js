@@ -5,7 +5,7 @@ import Touch from 'touch'
 
 class FileSystem {
 
-  static touch(...parameter) {
+  static touch(...argument) {
     return Touch.apply(this, parameter)
   }
 

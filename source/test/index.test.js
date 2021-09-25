@@ -5,8 +5,7 @@ Test.before(async (test) => {
 })
 
 ;[
-  'FileSystem',
-  'OK'
+  'FileSystem'
 ].forEach((name) => {
 
   Test(name, async (test) => {

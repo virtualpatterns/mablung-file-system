@@ -16,7 +16,7 @@
     "url": "https://github.com/virtualpatterns/mablung-file-system"
   },
   "type": "module",
-  "version": "0.0.2-20",
+  "version": "0.0.2-21",
   "dependencies": {
     "@virtualpatterns/mablung-process": "0.0.2-34",
     "fs-extra": "^10.0.0",

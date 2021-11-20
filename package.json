@@ -18,16 +18,16 @@
   "type": "module",
   "version": "0.0.2-21",
   "dependencies": {
-    "@virtualpatterns/mablung-process": "0.0.2-34",
+    "@virtualpatterns/mablung-process": "0.0.2-46",
     "fs-extra": "^10.0.0",
     "touch": "^3.1.0"
   },
   "devDependencies": {
-    "@virtualpatterns/babel-preset-mablung-makefile-environment": "0.0.26-4",
-    "@virtualpatterns/eslint-config-mablung-makefile-environment": "0.0.26-4",
-    "@virtualpatterns/mablung-check-dependency": "0.0.26-19",
-    "@virtualpatterns/mablung-makefile-environment": "0.0.26-15",
-    "@virtualpatterns/mablung-source-map-support": "0.0.26-20",
+    "@virtualpatterns/babel-preset-mablung-makefile-environment": "0.0.26-9",
+    "@virtualpatterns/eslint-config-mablung-makefile-environment": "0.0.26-9",
+    "@virtualpatterns/mablung-check-dependency": "0.0.26-37",
+    "@virtualpatterns/mablung-makefile-environment": "0.0.26-29",
+    "@virtualpatterns/mablung-source-map-support": "0.0.26-42",
     "ava": "^3.15.0"
   }
 }

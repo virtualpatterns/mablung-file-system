@@ -1,8 +1,7 @@
+import { FileSystem } from '@virtualpatterns/mablung-file-system'
 import { ProcessDurationExceededError } from '@virtualpatterns/mablung-process'
 import Path from 'path'
 import Test from 'ava'
-
-import { FileSystem } from '../../index.js'
 
 const FilePath = __filePath
 const PidPath = FilePath.replace('/release/', '/data/').replace('.test.js', '.pid')

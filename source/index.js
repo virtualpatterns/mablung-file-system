@@ -1,1 +1,1 @@
-export * from './library/file-system.js'
+export const OK = true

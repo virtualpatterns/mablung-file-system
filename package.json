@@ -35,6 +35,6 @@
     "@virtualpatterns/mablung-makefile-environment": "0.0.26-89",
     "@virtualpatterns/mablung-path": "^0.0.2-55",
     "@virtualpatterns/mablung-worker": "0.0.2-131",
-    "ava": "^4.3.0"
+    "ava": "^4.3.1"
   }
 }
